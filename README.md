@@ -70,8 +70,8 @@ A list of commonly used git commands
 |:--- |:--- 
 |`git branch -D [branch-name]`| Force delete the specified local branch 
 |`git push origin --delete [branch-name]`| Delete the specified remote branch
-|`git branch --merged | grep -v \* | xargs git branch -D` | Delete all remote branches that have already been merged
-|`git ls-files | tr '\n' '\0' | xargs -0 git update-index --assume-unchanged`| Remove files from local without removing from remote
+|<code>git branch --merged &#124; grep -v \* &#124; xargs git branch -D</code> | Delete all remote branches that have already been merged
+|<code>git ls-files &#124; tr '\n' '\0' &#124; xargs -0 git update-index --assume-unchanged</code>| Remove files from local without removing from remote
 |`rm -rf .git`| Clear git history
 |`git remote rm origin`| Remove git origin
 
