@@ -1,7 +1,7 @@
 ## GIT GUIDE 
 A list of commonly used git commands
 
-### Set Up 🛠
+### Set Up
 | Command | Description 
 |:--- |:--- 
 |`git clone https://github.com/[username]/[repository-name].git`| Retrieve an entire repository from a hosted location via URL 
@@ -12,13 +12,13 @@ A list of commonly used git commands
 |`git remote set-url origin [repository-URL]`| Set repository URL
 |`get remote -v`| Verify remote URL
 
-### Update 📲
+### Update
 | Command | Description 
 |:--- |:--- 
 |`git pull`| Fetch and merge any commits from the tracking remote branch
-|`git pull origin [branch-name]`|  Pull changes from locally stored branch and merge into local checked-out branch
+|`git pull origin [branch-name]`|  Pull changes from remote branch and merge into local checked-out branch
 
-### Branch 🌳
+### Branch
 | Command | Description 
 |:--- |:--- 
 |`git branch`| A list of current branches
@@ -29,7 +29,7 @@ A list of commonly used git commands
 |`git checkout [branch-name]`| Navigate to the specified branch
 |`git checkout -b [branch-name]`| Create a new branch and switch to that branch
 
-### Stage 🚥
+### Stage
 | Command | Description 
 |:--- |:--- 
 |`git status`| Show modified files in working directory, staged for next commit
@@ -39,7 +39,7 @@ A list of commonly used git commands
 |`git diff`| View the difference of what is changed but not yet staged
 |`git diff --staged`| View the difference of what is staged but not yet committed
 
-### Commit 💬
+### Commit
 | Command | Description 
 |:--- |:--- 
 |`git commit -m “[descriptive message]”`| Commit the staged content as a new commit snapshot
@@ -47,12 +47,12 @@ A list of commonly used git commands
 |`git commit --amend --no-edit`| Make amendment to the commit without changing commit message|
 |`git push -u origin [branch-name]`| Push local content to git
 
-### Merge 🧬
+### Merge
 | Command | Description 
 |:--- |:--- 
 |`git merge [branch]`| Merge the specified branch’s history into the current branch
 
-### Compare 📖
+### Compare
 | Command | Description 
 |:--- |:--- 
 |`git log`| View a repo's history
@@ -60,12 +60,12 @@ A list of commonly used git commands
 |`git log branchB..branchA`| View all the commits that are in branchA but not in branchB
 |`git diff branchB...branchA`| View the difference of what is in branchA that is not in branchB
 
-### Move 📦
+### Move
 | Command | Description 
 |:--- |:--- 
 |`git mv [existing-path] [new-path]`| Change an existing file path and stage the move
 
-### Delete 🗑
+### Delete
 | Command | Description 
 |:--- |:--- 
 |`git branch -D [branch-name]`| Force delete the specified local branch 
@@ -76,7 +76,7 @@ A list of commonly used git commands
 |`git remote rm origin`| Remove git origin
 
 
-### Temporary 🍃
+### Temporary
 | Command | Description 
 |:--- |:--- 
 |`git stash`| Saves uncommitted changes (both staged and unstaged) for later use
