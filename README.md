@@ -59,6 +59,9 @@ A list of commonly used git commands
 |`git log --oneline`| View repo's history with each commit condensed to one line
 |`git log branchB..branchA`| View all the commits that are in branchA but not in branchB
 |`git diff branchB...branchA`| View the difference of what is in branchA that is not in branchB
+|`git diff remotename/branchname:remote/path/file.js local/path/file.js`| View the difference between the local branch against the remote branch
+
+
 
 ### Move
 | Command | Description 
