@@ -86,4 +86,9 @@ A list of commonly used git commands
 |:--- |:--- 
 |`git stash`| Saves uncommitted changes (both staged and unstaged) for later use
 |`git stash pop`| Reapplies previously stashed changes
+|`git stash push -m "my_stash"`| Saving uncommitted changes by stash name
+|`git stash list`| View all the stashes stored in a stack
+|`git stash pop stash@{n}`| Apply a stash and remove it from the stash stack where `n` is the index of the stashed change
+|`git stash apply stash@{n}`| Apply a stash and keep it in the stash stack where `n` is the index of the stashed change
+|`git stash apply my_stash_name`| Apply a stash and keep it in the stack using the stash name
 
