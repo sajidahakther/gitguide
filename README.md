@@ -7,10 +7,10 @@ A list of commonly used git commands
 |`git clone https://github.com/[username]/[repository-name].git`| Retrieve an entire repository from a hosted location via URL 
 |`git clone ssh://git@github.com/[username]/[repository-name].git`|Retrieve an entire repository from a hosted location via SSH
 |`git init`| Initialise an existing directory as a Git repository 
-|`git config --global user.name “[firstname lastname]”`| Set a name that is identifiable for credit when review version history 
-|`git config --global user.email “[valid-email]”`| Set an email address that will be associated with each history marker 
-|`git remote set-url origin [repository-URL]`| Set repository URL
-|`get remote -v`| Verify remote URL
+|`git config --global user.name "[firstname lastname]"`| Set a name that is identifiable for credit when review version history 
+|`git config --global user.email "[valid-email]"`| Set an email address that will be associated with each history marker 
+|`git remote add origin [repository-URL]`| Set repository URL
+|`git remote -v`| Verify remote URL
 
 ### Update
 | Command | Description 
