@@ -37,8 +37,8 @@ A list of commonly used git commands
 |`ga .`| Add changes from all files to the staging area
 |`git restore --staged <file>`| unstage a file from the staging area
 |`git reset <file>`| Unstage a file while retaining the changes in working directory
-|`git diff`| View the difference of what is changed but not yet staged
-|`git diff --staged`| View the difference of what is staged but not yet committed
+|`gd`| View the difference of what is changed but not yet staged
+|`gd --staged`| View the difference of what is staged but not yet committed
 
 ### Commit
 | Command | Description 
@@ -61,8 +61,8 @@ A list of commonly used git commands
 |`git log --oneline`| View repo's history with each commit condensed to one line
 |`git log --all --decorate --oneline --graph`| View repo's history in a pretty git graph
 |`git log branchB..branchA`| View all the commits that are in branchA but not in branchB
-|`git diff branchB...branchA`| View the difference of what is in branchA that is not in branchB
-|`git diff remotename/branchname:remote/path/file.js local/path/file.js`| View the difference between the local branch against the remote branch
+|`gd branchB...branchA`| View the difference of what is in branchA that is not in branchB
+|`gd remotename/branchname:remote/path/file.js local/path/file.js`| View the difference between the local branch against the remote branch
 
 
 
