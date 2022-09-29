@@ -26,15 +26,15 @@ A list of commonly used git commands
 |`git branch -v`| View the last commit on each branch
 |`git branch [branch-name]`| Create a new branch at the current commit
 |`git branch --merged`| View which branches are already merged into the current branch
-|`git checkout [branch-name]`| Navigate to the specified branch
-|`git checkout -b [branch-name]`| Create a new branch and switch to that branch
+|`gco [branch-name]`| Check out to the specified branch
+|`gcb [branch-name]`| Create a new branch and switch to that branch
 
 ### Stage
 | Command | Description 
 |:--- |:--- 
 |`git status`| Show modified files in working directory, staged for next commit
 |`git add [file]`| Add changes from specified file to the staging area
-|`git add .`| Add changes from all files to the staging area
+|`ga .`| Add changes from all files to the staging area
 |`git reset [file]`| Unstage a file while retaining the changes in working directory
 |`git diff`| View the difference of what is changed but not yet staged
 |`git diff --staged`| View the difference of what is staged but not yet committed
@@ -46,6 +46,7 @@ A list of commonly used git commands
 |`git commit --amend -m “[updated commit message]”`| Combine staged changes with previous commit instead of creating a new commit
 |`git commit --amend --no-edit`| Make amendment to the commit without changing commit message|
 |`git push -u origin [branch-name]`| Push local content to git
+|`gp`| Push local content to git
 
 ### Merge
 | Command | Description 
