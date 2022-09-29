@@ -46,7 +46,7 @@ A list of commonly used git commands
 |`git commit -m “<descriptive message>”`| Commit the staged content as a new commit snapshot
 |`git commit --amend -m “<updated commit message>”`| Combine staged changes with previous commit instead of creating a new commit
 |`git commit --amend --no-edit`| Make amendment to the commit without changing commit message|
-|`git push -u origin <branch-name>`| Push local content to git
+|`gp -u origin <branch-name>`| Push local content to git
 |`gp`| Push local content to git
 
 ### Merge
@@ -60,9 +60,9 @@ A list of commonly used git commands
 |`git log`| View a repo's history
 |`git log --oneline`| View repo's history with each commit condensed to one line
 |`git log --all --decorate --oneline --graph`| View repo's history in a pretty git graph
-|`git log branchB..branchA`| View all the commits that are in branchA but not in branchB
-|`gd branchB...branchA`| View the difference of what is in branchA that is not in branchB
-|`gd remotename/branchname:remote/path/file.js local/path/file.js`| View the difference between the local branch against the remote branch
+|`git log <branchB>..<branchA>`| View all the commits that are in branchA but not in branchB
+|`gd <branchB>...<branchA>`| View the difference of what is in branchA that is not in branchB
+|`gd <remotename/branchname:remote/path/file.js> <local/path/file.js>`| View the difference between the local branch against the remote branch
 
 
 
@@ -76,7 +76,7 @@ A list of commonly used git commands
 |:--- |:--- 
 |`git branch -D <branch-name>`| Force delete the specified local branch 
 |<code>git branch &#124; grep '<prefix>' &#124; xargs git branch -D</code>| Delete multiple local branches with the prefix e.g. 'feature/...'
-|`git push origin --delete <branch-name>`| Delete the specified remote branch
+|`gp origin --delete <branch-name>`| Delete the specified remote branch
 |<code>git branch --merged &#124; grep -v \* &#124; xargs git branch -D</code> | Delete all remote branches that have already been merged
 |<code>git ls-files &#124; tr '\n' '\0' &#124; xargs -0 git update-index --assume-unchanged</code>| Remove files from local without removing from remote
 |`rm -rf .git`| Clear git history
