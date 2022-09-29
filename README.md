@@ -32,7 +32,7 @@ A list of commonly used git commands
 ### Stage
 | Command | Description 
 |:--- |:--- 
-|`git status`| Show modified files in working directory, staged for next commit
+|`gst`| git status; show modified files in working directory, staged for next commit
 |`ga <file>`| Add changes from specified file to the staging area
 |`ga .`| Add changes from all files to the staging area
 |`git restore --staged <file>`| unstage a file from the staging area
@@ -43,9 +43,9 @@ A list of commonly used git commands
 ### Commit
 | Command | Description 
 |:--- |:--- 
-|`git commit -m “<descriptive message>”`| Commit the staged content as a new commit snapshot
-|`git commit --amend -m “<updated commit message>”`| Combine staged changes with previous commit instead of creating a new commit
-|`git commit --amend --no-edit`| Make amendment to the commit without changing commit message|
+|`gci -m “<descriptive message>”`| Commit the staged content as a new commit snapshot
+|`gci --amend -m “<updated commit message>”`| Combine staged changes with previous commit instead of creating a new commit
+|`gci --amend --no-edit`| Make amendment to the commit without changing commit message|
 |`gp -u origin <branch-name>`| Push local content to git
 |`gp`| Push local content to git
 
