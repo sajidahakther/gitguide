@@ -54,6 +54,11 @@ A list of commonly used git commands
 |:--- |:--- 
 |`git merge <branch>`| Merge the specified branch’s history into the current branch
 
+### Revert
+| Command | Description 
+|:--- |:--- 
+|`git checkout [commit ID] -- path/to/file`| Reverts a single file to a specific file version using the associated commit ID
+
 ### Compare
 | Command | Description 
 |:--- |:--- 
